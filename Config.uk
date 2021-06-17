@@ -150,7 +150,7 @@ config LWIP_NUM_TCPLISTENERS
 	int "Maximum number of simultaneous TCP listeners"
 	default 64
 
-config TCPIP_THREAD_STACKSIZE
+config LWIP_TCPIP_THREAD_STACKSIZE
 	int "The stack size used by the main tcpip thread"
 	default 0
 endif
