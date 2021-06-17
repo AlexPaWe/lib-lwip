@@ -141,6 +141,8 @@ void sys_free(void *ptr);
 #define TCP_MSS CONFIG_LWIP_TCP_MSS
 #define TCP_CALCULATE_EFF_SEND_MSS 1
 #define IP_FRAG 0
+## added by me
+#define TCPIP_THREAD_STACKSIZE CONFIG_LWIP_TCPIP_THREAD_STACKSIZE
 
 #if CONFIG_LWIP_WND_SCALE
 /*
