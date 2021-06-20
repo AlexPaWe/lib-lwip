@@ -134,6 +134,10 @@ config LWIP_WND_SCALE
 	bool "Window scaling"
 	default y
 
+config LWIP_TCP_SND_BUF
+	int "Size of the TCP send buffer in bytes. For max throughput: 2x TCP_MSS"
+	default 1048576 
+
 config LWIP_TCP_QUEUE_OOSEQ
 	int "Size of queue of segments that are out of order"
 	default 4

@@ -155,7 +155,7 @@ void sys_free(void *ptr);
 #define TCP_RCV_SCALE 4
 #endif /* defined CONFIG_LWIP_WND_SCALE_FACTOR && CONFIG_LWIP_WND_SCALE_FACTOR >= 1 */
 #define TCP_WND 262142
-#define TCP_SND_BUF ( 1024 * 1024 )
+#define TCP_SND_BUF CONFIG_LWIP_TCP_SND_BUF /* default: ( 1024 * 1024 ) or 2x TCP_WND for max throughput */
 
 #else /* CONFIG_LWIP_WND_SCALE */
 /*
@@ -163,7 +163,7 @@ void sys_free(void *ptr);
  */
 #define LWIP_WND_SCALE 0
 #define TCP_WND 32766 /* Ideally, TCP_WND should be link bandwidth multiplied by rtt */
-#define TCP_SND_BUF (TCP_WND + (2 * TCP_MSS))
+#define TCP_SND_BUF CONFIG_LWIP_TCP_SND_BUF /* default (TCP_WND + (2 * TCP_MSS)) or 2x TCP_WND*/
 #endif /* CONFIG_LWIP_WND_SCALE */
 
 #define MEMP_NUM_TCP_PCB CONFIG_LWIP_NUM_TCPCON /* max num of sim. TCP connections */
