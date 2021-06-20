@@ -35,7 +35,7 @@
   /* When mem_malloc is called, an element of the smallest pool that can provide
    * the length needed is returned.
    */
-  #define MEM_USE_POOLS   1
+  #define MEM_USE_POOLS 1
   #define MEMP_USE_CUSTOM_POOLS 1
   #define MEM_USE_POOLS_TRY_BIGGER_POOL 1 /* take a bigger pool if necessary */
   #define MEMP_SEPARATE_POOLS 1

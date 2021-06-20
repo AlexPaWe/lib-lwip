@@ -5,3 +5,12 @@ Possible Performance Parameters of LWIP:
   TCP_QUEUE_OOSEQ==1: TCP will queue segments that arrive out of order. Define to 0 if your device is low on memory.8
   Only necessary when packet loss is expectet. Prevents resending of all pakets.
   Enabling is recommended
+  
+- TCP_SND_BUF
+  limit of sender buffer space (in bytes).
+  same value as TCP_WND --> maximum throughput
+  every active connection buffers to this amount of data (Attention: enough RAM or limit concurrent connections)
+  
+- LWIP_HEAP or LWIP_POOLS
+  Might be a huge waste of memory but pools should be way faster.
+  Tradeoff between memory footprint and speed.
