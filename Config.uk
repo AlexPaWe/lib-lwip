@@ -134,6 +134,10 @@ config LWIP_WND_SCALE
 	bool "Window scaling"
 	default y
 
+config LWIP_TCP_QUEUE_OOSEQ
+	int "Size of queue of segments that are out of order"
+	default 4
+
 config LWIP_TCP_KEEPALIVE
 	bool "Keepalive"
 	default n

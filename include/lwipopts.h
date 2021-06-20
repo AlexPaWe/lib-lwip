@@ -171,7 +171,7 @@ void sys_free(void *ptr);
 
 #define TCP_SNDLOWAT (4 * TCP_MSS)
 #define TCP_SND_QUEUELEN (2 * (TCP_SND_BUF) / (TCP_MSS))
-#define TCP_QUEUE_OOSEQ 4
+#define TCP_QUEUE_OOSEQ CONFIG_LWIP_TCP_QUEUE_OOSEQ /* int 1 - 4, default: 4 */
 #define MEMP_NUM_TCP_SEG ((MEMP_NUM_TCP_PCB) * ((TCP_SND_QUEUELEN) / 5))
 #define MEMP_NUM_FRAG_PBUF 32
 
