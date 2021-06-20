@@ -1,0 +1,7 @@
+----------------------------------------
+Possible Performance Parameters of LWIP:
+----------------------------------------
+- TCP_QUEUE_OOSEQ
+  TCP_QUEUE_OOSEQ==1: TCP will queue segments that arrive out of order. Define to 0 if your device is low on memory.8
+  Only necessary when packet loss is expectet. Prevents resending of all pakets.
+  Enabling is recommended
