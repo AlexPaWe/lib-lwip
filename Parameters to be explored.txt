@@ -11,6 +11,6 @@ Possible Performance Parameters of LWIP:
   same value as TCP_WND --> maximum throughput
   every active connection buffers to this amount of data (Attention: enough RAM or limit concurrent connections)
   
-- LWIP_HEAP or LWIP_POOLS
+- LWIP_HEAP or LWIP_POOLS (Already implemented in job.yaml)
   Might be a huge waste of memory but pools should be way faster.
   Tradeoff between memory footprint and speed.
