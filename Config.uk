@@ -197,6 +197,10 @@ config LWIP_DNS_MAX_SERVERS
 config LWIP_DNS_TABLE_SIZE
 	int "DNS table size"
 	default 32
+
+config LWIP_DNS_LOCAL_HOST_LIST
+	bool "Use a local host-to-address list"
+	default y
 endif
 
 config LWIP_SOCKET
