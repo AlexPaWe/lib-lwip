@@ -201,6 +201,10 @@ config LWIP_DNS_TABLE_SIZE
 config LWIP_DNS_LOCAL_HOST_LIST
 	bool "Use a local host-to-address list"
 	default y
+
+config LWIP_DNS_LOCAL_HOSTLIST_IS_DYNAMIC
+	bool "If enabled, the local hostlist is changeable during runtime."
+	default y
 endif
 
 config LWIP_SOCKET
