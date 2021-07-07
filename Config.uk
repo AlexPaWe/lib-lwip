@@ -139,8 +139,8 @@ config LWIP_TCP_SND_BUF
 	default 1048576 
 
 config LWIP_TCP_QUEUE_OOSEQ
-	int "Size of queue of segments that are out of order"
-	default 4
+	bool "Use a queue"
+	default y
 
 config LWIP_TCP_KEEPALIVE
 	bool "Keepalive"
